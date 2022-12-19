@@ -1,0 +1,54 @@
+{
+  "produits": [
+    {
+      "nom": "raremascara",
+      "quantite": "2",
+      "prix": "10",
+      "urlImages": "./assets/images/raremascara.jpg",
+      "id": 2
+    },
+    {
+      "id": "123",
+      "nom": "remlip",
+      "prix": "200",
+      "quantite": "2",
+      "urlImages": "./assets/images/remlip.jpg"
+    },
+    {
+      "id": "1234",
+      "nom": "rareblush",
+      "prix": "60",
+      "quantite": "5",
+      "urlImages": "./assets/images/rareblush.jpg"
+    },
+    {
+      "id": "00",
+      "nom": "remlip",
+      "prix": "22",
+      "quantite": "1",
+      "urlImages": "./assets/images/remlip.jpg"
+    }
+  ],
+  "signup": [
+    {
+      "email": null,
+      "password": null,
+      "PhoneNumber": null,
+      "id": 6
+    },
+    {
+      "name": "sara",
+      "email": "sara@gmail.com",
+      "PhoneNumber": "",
+      "password": "0000",
+      "id": 7
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "PhoneNumber": "",
+      "password": "0000",
+      "id": 8
+    }
+  ]
+}

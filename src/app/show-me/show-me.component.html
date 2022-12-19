@@ -1,0 +1,41 @@
+
+<form class="form-inline my-2 my-lg-0"style="padding: 10px; margin-left: 14cm">
+<h1 style="color: #9A616D">Have a Sneak Peek on our products </h1>
+</form>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container "id="main-container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let product of Products ">
+      <div class="ibox">
+        <div class="ibox-content product-box" >
+          <div class="product-imitation" >
+            <a href=""><img src="{{product.urlImages}}" alt="" class="img"></a>
+          </div>
+          <div class="product-desc">
+                    <span class="product-price">
+                       ${{product?.prix}}
+                    </span>
+
+            <a  class="product-name"> {{product?.nom}}</a>
+            <div class="small m-t-xs" *ngIf="product.quantite >=5 " style="color: #5BB318 ;font-weight: bold" >
+              In Stock <br>
+            </div>
+            <div class="small m-t-xs" *ngIf="product.quantite <5 && product.quantite >0 " style="color: orange ;font-weight: bold" >
+              Limited Stock <br>
+            </div>
+            <div class="small m-t-xs" *ngIf="product.quantite ==0 " style="color: red ;font-weight: bold" >
+              Out Of Stock <br>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <button class="btn btn-primary" (click)="Return()">Return to main page</button>
+</div>

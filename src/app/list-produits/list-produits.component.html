@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+<table class="table table-striped" >
+  <thead>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"  >
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  <tr>
+    <th scope="col">Code</th>
+    <th scope="col">Product name</th>
+    <th scope="col">Image</th>
+    <th scope="col">Price</th>
+    <th scope="col">Quantity</th>
+    <th scope="col">action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let p of Products">
+    <th >{{p.id}}</th>
+    <td>{{p.nom}}</td>
+    <td><img src="{{p.urlImages}}" class="img-fluid rounded-4" style="max-height: 100px; width: 100px"></td>
+    <td>{{p.prix}}</td>
+    <td>{{p.quantite}}</td>
+    <td>
+      <button  class="btn btn-danger  " style="font-size: 12px; " (click)="supprimer(p.id)"><i class="fa fa-trash" ></i></button>
+      <a routerLink="/edit/{{p.id}}" class="btn btn-primary  " style="color: white; font-size: 12px;"><i class="fa fa-pencil"  ></i></a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
